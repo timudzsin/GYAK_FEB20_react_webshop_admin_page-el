@@ -1,0 +1,48 @@
+.Item {
+	background: linear-gradient(0deg, hsl(0, 0%, 8%), hsl(0, 0%, 12%));
+	border: 1.5px solid hsl(0, 0%, 30%);
+	border-top: 1.5px solid hsl(0, 0%, 60%);
+	border-radius: 25px;
+
+	padding: 25px;
+
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.Item-name {
+	font-size: 26px;
+	font-weight: 600;
+	color: hsl(0, 0%, 95%);
+}
+
+.Item-price {
+	font-size: 22px;
+	font-weight: 400;
+	color: hsl(0, 0%, 70%);
+}
+
+.Item-button {
+	background: linear-gradient(0deg, hsl(0, 0%, 13%), hsl(0, 0%, 17%));
+	border: 1.5px solid hsl(0, 0%, 30%);
+	border-top: 1.5px solid hsl(0, 0%, 60%);
+	border-radius: 25px;
+
+	padding: 15px;
+
+	font-size: 22px;
+	font-weight: 400;
+	color: hsl(0, 0%, 95%);
+
+    cursor: pointer;
+    transition: all 0.17s ease-out;
+}
+.Item-button:hover {
+    transform: scale(1.15);
+	background: linear-gradient(0deg, hsl(0, 0%, 23%), hsl(0, 0%, 27%));
+	border: 1.5px solid hsl(0, 0%, 45%);
+	border-top: 1.5px solid hsl(0, 0%, 75%);
+}

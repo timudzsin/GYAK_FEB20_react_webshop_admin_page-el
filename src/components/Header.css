@@ -1,0 +1,16 @@
+.Header {
+	background-color: hsl(0, 0%, 5%);
+	border-bottom: 1.5px solid hsl(0, 0%, 30%);
+
+	min-height: 12vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Header h1 {
+	color: hsl(0, 0%, 95%);
+	font-size: 70px;
+	font-weight: 700;
+}
