@@ -11,6 +11,7 @@ export default function Item(props) {
 
 	return (
 		<div className="Item">
+            <img className="Item-image" src={props.item.image}></img>
 			<h3 className="Item-name">{props.item.name}</h3>
 			<p className="Item-price">{props.item.price}</p>
 			<button className="Item-button" onClick={onClick}>

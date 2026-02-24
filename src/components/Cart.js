@@ -11,7 +11,15 @@ export default function Cart() {
 	return (
 		<div className="Cart">
 			{cartArray.map((item, index) => {
-				return <h3 key={index}>{item.name}</h3>;
+				return (
+					<div className="Item">
+						<img
+							className="Item-image"
+							src={item.image}
+						></img>
+						<h3 className="Item-name">{item.name}</h3>
+					</div>
+				);
 			})}
 		</div>
 	);

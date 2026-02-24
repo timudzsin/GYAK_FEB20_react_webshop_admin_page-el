@@ -2,15 +2,22 @@
 	background-color: hsl(0, 0%, 5%);
 	border-bottom: 1.5px solid hsl(0, 0%, 30%);
 
-	min-height: 12vh;
+	min-height: 10vh;
 
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
-.Header h1 {
+.Header-menu {
 	color: hsl(0, 0%, 95%);
-	font-size: 70px;
+	background: none;
+	border: none;
+	font-size: 55px;
+	font-weight: 600;
+	transition: all 0.17s ease-out;
+}
+.Header-menu:hover {
+	transform: scale(1.15);
 	font-weight: 700;
 }

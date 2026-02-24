@@ -13,6 +13,12 @@
 	gap: 15px;
 }
 
+.Item-image {
+	width: 100px;
+	aspect-ratio: 1/1;
+	margin: auto;
+}
+
 .Item-name {
 	font-size: 26px;
 	font-weight: 600;
@@ -26,7 +32,7 @@
 }
 
 .Item-button {
-	background: linear-gradient(0deg, hsl(0, 0%, 13%), hsl(0, 0%, 17%));
+	background: linear-gradient(0deg, hsl(0, 0%, 18%), hsl(0, 0%, 22%));
 	border: 1.5px solid hsl(0, 0%, 30%);
 	border-top: 1.5px solid hsl(0, 0%, 60%);
 	border-radius: 25px;
@@ -37,11 +43,11 @@
 	font-weight: 400;
 	color: hsl(0, 0%, 95%);
 
-    cursor: pointer;
-    transition: all 0.17s ease-out;
+	cursor: pointer;
+	transition: all 0.17s ease-out;
 }
 .Item-button:hover {
-    transform: scale(1.15);
+	transform: scale(1.15);
 	background: linear-gradient(0deg, hsl(0, 0%, 23%), hsl(0, 0%, 27%));
 	border: 1.5px solid hsl(0, 0%, 45%);
 	border-top: 1.5px solid hsl(0, 0%, 75%);

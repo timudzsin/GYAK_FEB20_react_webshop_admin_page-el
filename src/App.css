@@ -4,7 +4,7 @@
 }
 
 .App-article{
-	min-height: 88vh;
+	min-height: 90vh;
     padding: 50px;
     display: flex;
     gap: 50px;

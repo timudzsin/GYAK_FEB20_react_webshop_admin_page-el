@@ -3,18 +3,16 @@
 	border: 1.5px solid hsl(0, 0%, 30%);
 	border-radius: 25px;
 
-	max-width: 1200px;
+	max-width: 1500px;
 	padding: 25px;
 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 15px;
-
-	transition: all 1s linear;
 }
 
-.Cart h3 {
+.Cart .Item {
 	background: linear-gradient(0deg, hsl(0, 0%, 8%), hsl(0, 0%, 12%));
 	border: 1.5px solid hsl(0, 0%, 30%);
 	border-top: 1.5px solid hsl(0, 0%, 60%);
@@ -24,4 +22,12 @@
 
 	text-align: center;
 	color: hsl(0, 0%, 95%);
+}
+.Cart .Item-image {
+	width: 55px;
+}
+.Cart .Item-name {
+	font-size: 18px;
+	font-weight: 400;
+	color: hsl(0, 0%, 70%);
 }

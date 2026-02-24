@@ -4,12 +4,12 @@ export const ShopContext = createContext();
 
 export const ShopProvider = ({ children }) => {
 	const itemArray = [
-		{ id: 1, name: "Copper Ingot", price: 7000 },
-		{ id: 2, name: "Iron Ingot", price: 2500 },
-		{ id: 3, name: "Gold Ingot", price: 3000 },
-		{ id: 4, name: "Emerald Gem", price: 5000 },
-		{ id: 5, name: "Diamond Gem", price: 7500 },
-		{ id: 6, name: "Netherite Ingot", price: 9900 },
+		{ id: 1, name: "Copper Ingot", price: 1450, image:"/images/Copper_Ingot.png" },
+		{ id: 2, name: "Iron Ingot", price: 2400, image:"/images/Iron_Ingot.png" },
+		{ id: 3, name: "Gold Ingot", price: 3800, image:"/images/Gold_Ingot.png" },
+		{ id: 4, name: "Emerald", price: 5000, image:"/images/Emerald.png" },
+		{ id: 5, name: "Diamond", price: 7500, image:"/images/Diamond.png" },
+		{ id: 6, name: "Netherite Scrap", price: 9900, image:"/images/Netherite_Scrap.png" },
 	];
 
 	const [cartArray, setCartArray] = useState([]);
