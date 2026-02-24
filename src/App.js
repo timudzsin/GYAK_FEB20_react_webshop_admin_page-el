@@ -6,21 +6,26 @@ import Items from "./components/Items";
 import UploadForm from "./components/UploadForm";
 
 function App() {
+	// navigációt így kell csinálni?
 	const [view, setView] = useState("shop");
+
+	let content;
+	if (view === "shop") {
+		content = (
+			<>
+				<Cart></Cart>
+				<Items></Items>
+			</>
+		);
+	} else if (view === "add") {
+		content = <UploadForm></UploadForm>;
+	}
 
 	return (
 		<div className="App">
-			<Header onChangeView={setView}></Header>
+			<Header currentView={view} onChangeView={setView}></Header>
 
-			<div className="App-article">
-				{view === "shop" && (
-					<>
-						<Cart></Cart>
-						<Items></Items>
-					</>
-				)}
-				{view === "other" && <UploadForm></UploadForm>}
-			</div>
+			<div className="App-article">{content}</div>
 		</div>
 	);
 }

@@ -5,17 +5,25 @@ export default function Header(props) {
 	return (
 		<div className="Header">
 			<button
-				className="Header-menu"
+				className={
+					props.currentView === "shop"
+						? "Header-menu active"
+						: "Header-menu"
+				}
 				onClick={() => props.onChangeView("shop")}
 			>
 				Shop
 			</button>
 
 			<button
-				className="Header-menu"
-				onClick={() => props.onChangeView("other")}
+				className={
+					props.currentView === "add"
+						? "Header-menu active"
+						: "Header-menu"
+				}
+				onClick={() => props.onChangeView("add")}
 			>
-				Upload item
+				Add item
 			</button>
 		</div>
 	);

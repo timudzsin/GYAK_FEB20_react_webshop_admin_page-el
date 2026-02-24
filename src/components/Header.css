@@ -2,7 +2,7 @@
 	background-color: hsl(0, 0%, 5%);
 	border-bottom: 1.5px solid hsl(0, 0%, 30%);
 
-	min-height: 10vh;
+	min-height: 100px;
 
 	display: flex;
 	justify-content: space-evenly;
@@ -10,14 +10,19 @@
 }
 
 .Header-menu {
-	color: hsl(0, 0%, 95%);
+	color: hsl(0, 0%, 70%);
 	background: none;
 	border: none;
-	font-size: 55px;
-	font-weight: 600;
+	font-size: 45px;
+	font-weight: 200;
+	cursor: pointer;
 	transition: all 0.17s ease-out;
 }
 .Header-menu:hover {
 	transform: scale(1.15);
-	font-weight: 700;
+}
+.Header-menu.active {
+	color: hsl(0, 0%, 95%);
+	font-weight: 500;
+	font-size: 55px;
 }

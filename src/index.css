@@ -1,3 +1,10 @@
+/*
+    backgrounds:         0
+    background panels:   5
+    elements:           10
+    buttons:            20
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 * {
@@ -8,7 +15,11 @@
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-    color: white;
+	color: white;
+	transition: all 0.17s ease-out;
+}
+html, body, #root, .App {
+	background-color: black;
 }
 
 body {
@@ -21,3 +32,5 @@ code {
 	font-family:
 		source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+

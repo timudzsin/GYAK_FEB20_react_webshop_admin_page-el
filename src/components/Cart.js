@@ -12,7 +12,7 @@ export default function Cart() {
 		<div className="Cart">
 			{cartArray.map((item, index) => {
 				return (
-					<div className="Item">
+					<div className="Item" key={index}>
 						<img
 							className="Item-image"
 							src={item.image}
