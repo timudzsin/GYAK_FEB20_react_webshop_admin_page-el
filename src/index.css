@@ -16,9 +16,13 @@
 	font-weight: 400;
 	font-style: normal;
 	color: white;
+	image-rendering: pixelated;
 	transition: all 0.17s ease-out;
 }
-html, body, #root, .App {
+html,
+body,
+#root,
+.App {
 	background-color: black;
 }
 
@@ -32,5 +36,3 @@ code {
 	font-family:
 		source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-

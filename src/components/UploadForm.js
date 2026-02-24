@@ -70,7 +70,7 @@ export default function UploadForm() {
 				onChange={handleChange}
 			/>
 			<button className="UploadForm-button" type="submit">
-				Add
+				Upload
 			</button>
 		</form>
 	);

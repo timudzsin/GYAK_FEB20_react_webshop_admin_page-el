@@ -17,13 +17,24 @@ export default function Header(props) {
 
 			<button
 				className={
-					props.currentView === "add"
+					props.currentView === "form"
 						? "Header-menu active"
 						: "Header-menu"
 				}
-				onClick={() => props.onChangeView("add")}
+				onClick={() => props.onChangeView("form")}
 			>
-				Add item
+				Form
+			</button>
+
+            <button
+				className={
+					props.currentView === "axios"
+						? "Header-menu active"
+						: "Header-menu"
+				}
+				onClick={() => props.onChangeView("axios")}
+			>
+				Axios
 			</button>
 		</div>
 	);

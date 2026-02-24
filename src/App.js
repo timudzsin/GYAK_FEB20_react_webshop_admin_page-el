@@ -4,6 +4,7 @@ import Cart from "./components/Cart";
 import Header from "./components/Header";
 import Items from "./components/Items";
 import UploadForm from "./components/UploadForm";
+import AxiosButton from "./components/AxiosButton";
 
 function App() {
 	// navigációt így kell csinálni?
@@ -17,8 +18,10 @@ function App() {
 				<Items></Items>
 			</>
 		);
-	} else if (view === "add") {
+	} else if (view === "form") {
 		content = <UploadForm></UploadForm>;
+	} else if (view === "axios") {
+		content = <AxiosButton></AxiosButton>;
 	}
 
 	return (
