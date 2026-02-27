@@ -21,30 +21,28 @@ export default function UploadForm() {
 	const handleSubmit = (e) => {
 		console.log("submit");
 
-        // megakadájozza, hogy az űrlap újratöltse az oldalt submit után
+		// megakadájozza, hogy az űrlap újratöltse az oldalt submit után
 		e.preventDefault();
 
-        // ha bármi űres, kilép
+		// ha bármi űres, kilép
 		if (!formData.name || !formData.price) {
 			alert("Fill out every field!");
 			return;
 		}
 
-        // új Item objektum létrehozása
+		// új Item objektum létrehozása
 		//{ id: 1, name: "Copper Ingot", price: 800, image:"/images/Copper_Ingot.png" },
 		const newItem = {
-			id: itemArray.length
-				? Math.max(...itemArray.map((item) => item.id)) + 1
-				: 1,
+			id: itemArray.length ? Math.max(...itemArray.map((item) => item.id)) + 1 : 1,
 			name: formData.name,
 			price: Number(formData.price),
 			image: "/images/Item.png",
 		};
 
-        // belerakja az ItemArray-be
+		// belerakja az ItemArray-be
 		setItemArray((prev) => [...prev, newItem]);
 
-        // reseteli a form-ot.
+		// reseteli a form-ot.
 		setFormData({
 			name: "",
 			price: "",
