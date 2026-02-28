@@ -14,11 +14,6 @@ export const ShopProvider = ({ children }) => {
 
 	const [cartArray, setCartArray] = useState([]);
 
-	// ez a metódus tényleg kell? miért nem hasznájuk közvetlenül a setCartArray-t?
-	const addToCart = (item) => {
-		setCartArray((prev) => [...prev, item]);
-	};
-
 	return (
 		<ShopContext.Provider
 			value={{
@@ -26,8 +21,6 @@ export const ShopProvider = ({ children }) => {
 				setItemArray,
 				cartArray,
 				setCartArray,
-
-				addToCart,
 			}}
 		>
 			{children}

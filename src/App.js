@@ -3,7 +3,7 @@ import "./App.css";
 import Cart from "./components/Cart";
 import Header from "./components/Header";
 import Items from "./components/Items";
-import UploadForm from "./components/UploadForm";
+import UploadForm from "./components/ItemForm";
 import AxiosButton from "./components/AxiosButton";
 
 function App() {

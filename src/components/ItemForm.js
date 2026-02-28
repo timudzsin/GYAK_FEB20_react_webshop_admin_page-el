@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react";
 import { ShopContext } from "../contexts/ShopContext";
-import "./UploadForm.css";
+import "./ItemForm.css";
 
-export default function UploadForm() {
+export default function ItemForm() {
 	const { itemArray, setItemArray } = useContext(ShopContext);
 
 	const [formData, setFormData] = useState({ name: "", price: "" });
@@ -50,9 +50,9 @@ export default function UploadForm() {
 	};
 
 	return (
-		<form className="UploadForm" onSubmit={handleSubmit}>
+		<form className="ItemForm" onSubmit={handleSubmit}>
 			<input
-				className="UploadForm-nameinput"
+				className="ItemForm-nameinput"
 				type="text"
 				name="name"
 				placeholder="name"
@@ -60,14 +60,14 @@ export default function UploadForm() {
 				onChange={handleChange}
 			/>
 			<input
-				className="UploadForm-priceinput"
+				className="ItemForm-priceinput"
 				type="number"
 				name="price"
 				placeholder="price"
 				value={formData.price}
 				onChange={handleChange}
 			/>
-			<button className="UploadForm-button" type="submit">
+			<button className="ItemForm-button" type="submit">
 				Upload
 			</button>
 		</form>
