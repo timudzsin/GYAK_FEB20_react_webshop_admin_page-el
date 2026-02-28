@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Items from "./components/Items";
 import UploadForm from "./components/ItemForm";
 import AxiosButton from "./components/AxiosButton";
+import { AxiosButtonProvider } from "./contexts/AxiosButtonContext";
 
 function App() {
 	// navigációt így kell csinálni?
@@ -21,7 +22,11 @@ function App() {
 	} else if (view === "form") {
 		content = <UploadForm></UploadForm>;
 	} else if (view === "axios") {
-		content = <AxiosButton></AxiosButton>;
+		content = (
+			<AxiosButtonProvider>
+				<AxiosButton></AxiosButton>
+			</AxiosButtonProvider>
+		);
 	}
 
 	return (
